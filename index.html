@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8">
+
+<title>Calculo</title>
+
+</head>
+
+<body>
+    <h1><div id="resultado" style="font-size: 20px; font-weight: bold; margin-top: 20px;"></div></h1>
+
+    <script>
+    
+    var num1 = parseFloat(prompt('Digite o primeiro numero'))
+    
+    var num2 = parseFloat(prompt('Digite o segundo numero:'))
+    
+    var operacao = prompt('Digite a operacao (adicao, subtracao, divisao ou multiplicacao):')
+    
+    if (operacao === "adicao") 
+    {
+        resultado = num1 + num2
+    }
+    
+    else if (operacao === "subtracao") 
+    {
+        resultado = num1 - num2
+    }
+    
+    else if (operacao === "divisao") 
+    {
+        resultado = num1 / num2
+    }
+    
+    else if (operacao === "multiplicacao") 
+    {
+        resultado = num1 * num2
+    }
+
+    else {
+
+        resultado = "Operação inválida!"; }
+    
+        
+     alert("Seu resultado é " + resultado + " Sua operacao foi a " + operacao )
+    
+        document.getElementById("resultado").innerHTML = "Seu resultado é: " + resultado;
+
+   
+    </script>
+    
+</body>
+</html>
