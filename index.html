@@ -7,14 +7,15 @@
 <meta charset="utf-8">
 
 <title>Calculo</title>
+<link rel="stylesheet" href="index.css">
 
-</head>
+<h1><div id="resultado" style="font-size: 20px; font-weight: bold; margin-top: 20px;"></div></h1>
 
-<body>
-    <h1><div id="resultado" style="font-size: 20px; font-weight: bold; margin-top: 20px;"></div></h1>
 
-    <script>
+ <script>
     
+    function calcular() {
+
     var num1 = parseFloat(prompt('Digite o primeiro numero'))
     
     var num2 = parseFloat(prompt('Digite o segundo numero:'))
@@ -50,8 +51,21 @@
     
         document.getElementById("resultado").innerHTML = "Seu resultado é: " + resultado;
 
-   
+    }
     </script>
+
+</head>
+
+<body>
+    
+<link rel="stylesheet" href="index.css">
+
+        <h1>Calculadora Aritmética </h1>
+    
+        <button onclick="calcular()">Calcular</button>
+
+    <p> Escolha a operação e digite dois números, isso irá gerar um resultado!</p>
+    
     
 </body>
 </html>
